@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./task.css">
+</head>
+<body>
+    <div class="container">
+    <div class="result">0</div>
+    <div class="one">
+    <button  onclick="validation('7')">7</button>
+    <button  onclick="validation('8')">8</button>
+    <button  onclick="validation('9')">9</button>
+    <button  onclick="validation('+')">+</button>
+   </div>
+   <div class="two">
+    <button onclick="validation('4')">4</button>
+    <button onclick="validation('5')">5</button>
+    <button  onclick="validation('6')">6</button>
+    <button onclick="validation('-')">-</button>
+</div>
+<div class="three">
+    <button  onclick="validation('1')">1</button>
+    <button onclick="validation('2')">2</button>
+    <button onclick="validation('3')">3</button>
+    <button onclick="validation('0')">0</button>
+</div>
+<div class="four">
+    <button onclick="validation('%')">%</button>
+    <button onclick="calresut()">=</button>
+    <button onclick="validation('.')">.</button>
+    <button onclick="validation('*')">*</button>
+</div>
+    <button  onclick="vanish()">c</button>
+    </div>
+
+    <script>
+
+        let result=document.querySelector(".result");
+
+        function validation(v)
+        {
+            result.textContent= result.textContent=="0"?v:result.textContent+v
+        }
+
+        function  vanish(){
+            result.textContent=0
+        }
+
+        function calresut(){
+            result.textContent=eval(result.textContent)
+        }
+    </script>
+</body>
+</html>

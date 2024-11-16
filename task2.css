@@ -1,0 +1,28 @@
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aqua;
+    gap: 10px;
+
+}
+.quotes
+{
+    background-color: black;
+    color:white;
+    padding: 10px;
+    display: block;
+    font-size: 25px;
+    font-weight: 300;
+}
+button
+{
+    outline: none;
+    border: none;
+    background-color: gray;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
